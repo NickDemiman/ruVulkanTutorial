@@ -10,7 +10,7 @@
 #include "HelloTiangleApplication.h"
 
 int main() {
-    /*glfwInit();
+    glfwInit();
 
     glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
     GLFWwindow* window = glfwCreateWindow(800, 600, "Vulkan window", nullptr, nullptr);
@@ -30,19 +30,7 @@ int main() {
 
     glfwDestroyWindow(window);
 
-    glfwTerminate();*/
+    glfwTerminate();
 
-    HelloTiangleApplication app;
-
-    try
-    {
-        app.run();
-    }
-    catch (const std::exception& e)
-    {
-        std::cerr << e.what() << std::endl;
-        return EXIT_FAILURE;
-    }
-
-    return EXIT_SUCCESS;
+    return 0;
 }
